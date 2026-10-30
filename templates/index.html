@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Главная - Лаб 6{% endblock %}
+{% block content %}
+<div class="p-5 mb-4 bg-white custom-card rounded-3">
+    <h1 class="display-6 fw-bold text-primary">Веб-программирование на Flask</h1>
+    <p class="col-md-9 fs-5 text-secondary">
+        Лабораторная работа выполнена по Варианту 3. Демонстрирует связывание статических CSS-файлов, Bootstrap, рендеринга Jinja2 и сессионной авторизации.
+    </p>
+    <a href="{{ url_for('show_data') }}" class="btn btn-primary btn-lg">Перейти к шаблону Jinja2</a>
+</div>
+{% endblock %}
